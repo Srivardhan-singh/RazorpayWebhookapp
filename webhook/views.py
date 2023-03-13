@@ -3,9 +3,6 @@ from django.http import HttpResponseBadRequest, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from django.conf import settings
-from razorpay import Client
-
-client = Client(auth=(settings.RAZORPAY_ID, settings.RAZORPAY_SECRET))
 
 
 @csrf_exempt
